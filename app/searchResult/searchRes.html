@@ -1,0 +1,31 @@
+<div>
+    <div class="row">
+        <section id="info-bar" class="info">
+            <div>
+                <div class="info-text">
+                    <a  ui-sref="home"><img src="assets/images/back-arrow-circle.png" class="info-img"></a>
+                    <span class="title-info-bar">Search Results for</span><br/>
+                    <span class="title-info-bar">{{searchQueryStr}}</span>
+                </div>
+            </div>
+        </section>
+        <section id="results">
+            <div class="module col s2" ng-repeat="item in results">
+                <div ng-click="movieDetails(item.Title)">
+                    <a ui-sref="movieResult" ng-if="'N/A' == item.Poster"><img src="assets/images/default-poster.jpg" class="image" /></a>
+                    <a ui-sref="movieResult" ng-if="N/A != item.Poster"><img ng-src="{{item.Poster}}" class="image" /></a>
+                    <div class="header">
+                        <
+                        <span class="name-movie">
+                            {{item.Title}}
+                        </span>
+                        <br/>
+                        <span class="year-release">
+                            Release Year : {{item.Year}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

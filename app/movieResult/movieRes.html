@@ -1,0 +1,32 @@
+<div>
+    <div class="row">
+        <section id="info-bar" class="info">
+            <div>
+                <div class="info-text">
+                    <a  ui-sref="home"><img src="assets/images/back-arrow-circle.png" class="info-img"></a>
+                    <span class="title-info-bar">Movie Details for</span><br/>
+                    <span class="title-info-bar">{{dispDetails.Title}}</span>
+                </div>
+            </div>
+        </section>
+        <section id="results">
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <div class="card">
+                        <div class="card-image">
+                            <img ng-src="{{dispDetails.Poster}}">
+                            <span class="card-title">{{dispDetails.Title}}</span>
+                        </div>
+                        <div class="card-content">
+                            <ul class="collection">
+                                <li class="collection-item">Year of Release : {{dispDetails.Year}}</li>
+                                <li class="collection-item">Casting : {{dispDetails.Actors}}</li>
+                                <li class="collection-item">Plot : {{dispDetails.Plot}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

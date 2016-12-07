@@ -1,0 +1,143 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+    background-color: rgb(246,171,54);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.logo_section{
+	margin: 40px auto;
+    display: block;
+    width: 200px;
+}
+
+.light_strip{
+	width: 100%;
+	max-width: 600px;
+	background-color: rgba(247,188,94, 1);
+	text-align: center;
+	margin: 0px auto;
+	padding: 30px 40px;
+	color: #fff;
+	font-size: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FFF;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #FFF;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #FFF;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #FFF;
+}
+
+input.search-box {
+    background: transparent url(../assets/images/search-icon.png) no-repeat 9px center;
+    border: solid 1px #fff;
+    padding: 9px 10px 9px 32px;
+    border-radius: 10em;
+    transition: all .5s;
+    font-family: inherit;
+    font-size: 100%;
+    outline: none;
+    color: #fff;
+    width: 300px;
+    padding: 20px 10px 20px 60px;
+    background-size: 30px 30px;
+}
+
+
+.search-box-div{
+	margin: 30px auto;
+	text-align: center;
+}
+input.search-box:placeholder {
+	color: #fff;
+}
+
+.module {
+
+    background-attachment: fixed;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    margin-left: 11px;
+    background-color: black;
+    opacity: 0.6;
+    background-attachment: fixed;
+}
+.image{
+    width: auto;
+    height: 100%;
+
+}
+.info-text{
+    text-align: center;
+    float: none;
+
+}
+
+.info{
+    height:100px;
+
+    background-color: rgba(247,188,94, 1);
+}
+
+.info-img{
+    float: left;
+    margin: 15px;
+}
+span.name-movie{
+    font-size: smaller;
+    color: #FFF;
+    margin-left: 5px;
+    z-index: 1;
+
+
+}
+
+.title-info-bar{
+    padding-right: 200px;
+    font-size: x-large;
+    color: white;
+}
+
+span.year-release{
+    font-size: 10px;
+    color: #FFF;
+    margin-left: 5px;
+    z-index: 1;
+}
+
+#results{
+    margin: 10px;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.s12{
+    width: 500px;
+}
